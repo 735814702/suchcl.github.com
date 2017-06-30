@@ -12,12 +12,13 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/30/github-hexo搭建个人网页/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="曾经，有过这么一个想法，能把自己的见闻记录下来，以使自己在多年以后还能留下点什么，于是就萌生了个这样的想法，搭建一个个人博客。 看到别人都自己买空间、域名，用wordpress或其他的博客程序加起来一个博客，瞬间感觉高大上了学多，但是这并不是自己想要的。 如果希望有一天，自己的博客或网站访问量大了，加几个广告位，倒是一个不错的注意，而我其实是最讨厌网页中的广告的，我们在优酷或者爱奇艺追个剧吧，一开">
+<meta property="og:image" content="http://yoursite.com/images/img2.png">
 <meta property="og:image" content="http://yoursite.com/images/img1.png">
-<meta property="og:updated_time" content="2017-06-30T10:09:01.000Z">
+<meta property="og:updated_time" content="2017-06-30T10:34:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github+hexo搭建个人网页">
 <meta name="twitter:description" content="曾经，有过这么一个想法，能把自己的见闻记录下来，以使自己在多年以后还能留下点什么，于是就萌生了个这样的想法，搭建一个个人博客。 看到别人都自己买空间、域名，用wordpress或其他的博客程序加起来一个博客，瞬间感觉高大上了学多，但是这并不是自己想要的。 如果希望有一天，自己的博客或网站访问量大了，加几个广告位，倒是一个不错的注意，而我其实是最讨厌网页中的广告的，我们在优酷或者爱奇艺追个剧吧，一开">
-<meta name="twitter:image" content="http://yoursite.com/images/img1.png">
+<meta name="twitter:image" content="http://yoursite.com/images/img2.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -110,7 +111,20 @@
 </li>
 <li><p>初始化hexo</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
-<p> 到此位置，hexo的安装已经全部完成了，接下来，我们就可以搭建github环境。</p>
+</li>
+<li><p>生成静态页面</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<p> generate也可以简写为g,如</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
+</li>
+<li><p>启动hexo服务</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bash server</div></pre></td></tr></table></figure>
+</li>
+<li><p>本地浏览</p>
+<p> 如果启动服务成功，则会提示运行该服务的端口，一般情况下默认为4000，</p>
+<p> <img src="/images/img2.png" alt=""></p>
+<p> 在浏览器输入<a href="http://localhost:4000,如果能正常预览，则hexo的环境搭建成功。" target="_blank" rel="external">http://localhost:4000,如果能正常预览，则hexo的环境搭建成功。</a></p>
+<p> 到此位置，hexo的安装已经全部完成了,接下来，我们就可以搭建github环境。</p>
 </li>
 </ol>
 <h3 id="github环境搭建"><a href="#github环境搭建" class="headerlink" title="github环境搭建"></a>github环境搭建</h3><ul>
@@ -120,13 +134,33 @@
 <li><p>创建仓库</p>
 <p>  github账号注册成功之后，就可以创建仓库了。</p>
 <p>  <img src="/images/img1.png" alt=""></p>
+<p>  登录后的右上角点击”+”加号，在弹出的操作列表中选择”New repository”,创建仓库；</p>
+<p>  这里创建仓库的方式，推荐一片文章，<a href="http://blog.csdn.net/renfufei/article/details/37725057/" target="_blank" rel="external">http://blog.csdn.net/renfufei/article/details/37725057/</a></p>
+</li>
+<li><p>配置github</p>
 </li>
 </ul>
+<h3 id="hexo的常用命令"><a href="#hexo的常用命令" class="headerlink" title="hexo的常用命令"></a>hexo的常用命令</h3><ul>
+<li><p>hexo new “title” 新建一篇文章</p>
+</li>
+<li><p>hexo new page “title” 新建一个页面</p>
+</li>
+<li><p>hexo generate 生成静态页面</p>
+</li>
+</ul>
+<h3 id="hexo部署方法"><a href="#hexo部署方法" class="headerlink" title="hexo部署方法"></a>hexo部署方法</h3><ol>
+<li><p>hexo clean</p>
+</li>
+<li><p>hexo g</p>
+</li>
+<li><p>hexo deploy</p>
+</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/30/github-hexo搭建个人网页/" data-id="cj4jp5m5h0000snmvj16qsx6y" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/06/30/github-hexo搭建个人网页/" data-id="cj4jq2ic5000019mv9iztv6sm" class="article-share-link">Partager</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github-hexo/">Github + hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>

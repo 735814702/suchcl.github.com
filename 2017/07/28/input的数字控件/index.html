@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/07/28/input的数字控件/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="html5为input增添了不少新的属性，为我们的开发带来了很大的便利，但在带来便利的同时，也带来了一些问题。 数字控件这是HTMl5中新增的一个属性。 1&amp;lt;input type=&quot;number&quot;&amp;gt; 这样，就生成了一个只能输入数字的数字控件。既然是一个数字控件，很简单了，就是说这个输入框控件只能够输入数字，其他类型的文案，是不能正常输入的，比如汉子、英文字母、标点符号等，但在一些场景下">
-<meta property="og:updated_time" content="2017-07-28T06:18:35.000Z">
+<meta property="og:updated_time" content="2017-07-28T06:19:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="input的数字控件">
 <meta name="twitter:description" content="html5为input增添了不少新的属性，为我们的开发带来了很大的便利，但在带来便利的同时，也带来了一些问题。 数字控件这是HTMl5中新增的一个属性。 1&amp;lt;input type=&quot;number&quot;&amp;gt; 这样，就生成了一个只能输入数字的数字控件。既然是一个数字控件，很简单了，就是说这个输入框控件只能够输入数字，其他类型的文案，是不能正常输入的，比如汉子、英文字母、标点符号等，但在一些场景下">
@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -113,14 +113,14 @@
 </li>
 </ol>
 <p>如果在控件内输入了一个伪数字，就是一个看起来像一个数字但又不是一个真正意义上数字的时候，如2.4.5等有多个小数点的情况，就不会触发change事件。</p>
-<h3 id="去除默认样式"><a href="#去除默认样式" class="headerlink" title="去除默认样式"></a>去除默认样式</h3><p>数字控件有上下箭头，虽然在一定的场景会方便我们的行为，但我们的初衷并不是为了点击这里的上下箭头来实现我们的一些操作(这个默认的UI实在是太简陋了，不小心是点不到的，或者对不愿意使用键盘的人来说这简直就是一个糟糕透顶的交互)，而是希望控件可以帮助我们做一些相应的数值型的验证，但这方面做的并不友好。那么我们要么就不使用这个数字控件，或者去掉控件的默认样式。</p>
+<h3 id="去除默认样式"><a href="#去除默认样式" class="headerlink" title="去除默认样式"></a>去除默认样式</h3><p>数字控件有上下箭头，虽然在一定的场景会方便我们的行为，但我们的初衷并不是为了点击这里的上下箭头来实现我们的一些操作(这个默认的UI实在是太简陋了，不小心是点不到的，或者对不愿意使用键盘的人来说这简直就是一个糟糕透顶的交互)，而是希望控件可以帮助我们做一些相应的数值型的验证，但这方面做的并不友好。那么我们要么就不使用这个数字控件，或者去掉控件的默认样式,去掉默认的上下箭头。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-webkit-inner-spin-button</span> &#123;</div><div class="line">    <span class="attribute">-webkit-appearance</span>: none <span class="meta">!important</span>;</div><div class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="number"]</span>&#123;</div><div class="line">    <span class="attribute">-moz-appearance</span>: textfield;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>总的来说，这个控件在开发中并没有为我们带来多少便利，除了一个不怎么友好的非数字不能输入(个别情况除外)的验证，对于我们复杂的业务验证，还是少不了js的支持，所以，如果不是为了赶时髦，并且有技术团队支持的话，暂时就当这个控件不存在吧。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/28/input的数字控件/" data-id="cj5nh91n70000v3mvown2ipon" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2017/07/28/input的数字控件/" data-id="cj5nha5tw0004vxmvbh1sik3w" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -131,7 +131,7 @@
   
   
     <a href="/2017/07/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ouder</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -146,7 +146,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categorieën</h3>
+    <h3 class="widget-title">Catégories</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a></li></ul>
     </div>
@@ -156,7 +156,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Labels</h3>
+    <h3 class="widget-title">Mot-clés</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github-hexo/">Github + hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
     </div>
@@ -166,7 +166,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nuage de mot-clés</h3>
     <div class="widget tagcloud">
       <a href="/tags/Github-hexo/" style="font-size: 10px;">Github + hexo</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
     </div>
@@ -175,7 +175,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archieven</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li></ul>
     </div>
@@ -185,7 +185,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recente berichten</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -218,7 +218,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
